@@ -1,16 +1,16 @@
 
-# Loop Step 2
+# Loop Step 3
 
-Intelligence layer rebuild for Loop.
+Progression and causality engine prototype.
 
 Included:
-- Structured round state model
-- Hole-level tracking
-- Insight engine v1
-- Evidence-based observations
-- Scalable feature architecture
-- Modular React structure
-- Vercel-ready setup
+- Momentum engine
+- Confidence scoring
+- Current focus system
+- Causality storytelling
+- Progression summaries
+- Scoring constraint logic
+- Next round objectives
 
 ## Run
 
