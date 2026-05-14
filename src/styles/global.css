@@ -1,0 +1,28 @@
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+.screen {
+  padding: 24px;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 16px;
+  background: #111827;
+}
+
+button {
+  border: none;
+  border-radius: 12px;
+  padding: 12px 16px;
+  font-size: 16px;
+}
