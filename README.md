@@ -1,18 +1,18 @@
 
-# Loop
+# Loop Step 1
 
-Rebuilt scalable React architecture for the Loop golf app prototype.
+Rebuilt round capture flow for the Loop golf app.
 
-## Stack
-- React
-- Vite
-- Tailwind-ready structure
-- Modular feature architecture
+Included:
+- Modular React structure
+- Course setup screen
+- Improved round capture flow
+- Hole progression
+- Round completion storytelling
+- Reusable UI components
+- Vercel-ready structure
 
-## Run locally
+## Run
 
 npm install
 npm run dev
-
-## Deployment
-Ready for GitHub + Vercel deployment.

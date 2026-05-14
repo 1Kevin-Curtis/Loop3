@@ -1,9 +1,19 @@
 
-export default function HomeScreen() {
+export default function HomeScreen({ onStartRound }) {
   return (
     <div className="screen">
-      <h2>Home</h2>
-      <p>Your golf improvement hub.</p>
+      <div className="hero-card">
+        <p className="eyebrow">Current Focus</p>
+        <h1>Approach Play</h1>
+        <p>
+          Your scoring opportunities are improving, but missed greens from
+          120–160 yards are limiting lower scores.
+        </p>
+      </div>
+
+      <button className="primary-button" onClick={onStartRound}>
+        Start New Round
+      </button>
     </div>
   );
 }
