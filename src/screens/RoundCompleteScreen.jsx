@@ -1,31 +1,30 @@
 
-export default function RoundCompleteScreen() {
+import { generateInsights } from "../features/insights/insightEngine";
+
+export default function RoundCompleteScreen({ roundData }) {
+  const insights = generateInsights(roundData);
+
+  const totalScore = roundData.holes.reduce(
+    (sum, hole) => sum + hole.score,
+    0
+  );
+
   return (
     <div className="screen">
       <div className="hero-card">
         <p className="eyebrow">Round Complete</p>
-        <h1>79</h1>
+        <h1>{totalScore}</h1>
         <p>
-          Your driving consistency improved today and you avoided penalty
-          shots across the final 9 holes.
+          {roundData.course} • {roundData.tees} Tees
         </p>
       </div>
 
-      <div className="insight-card">
-        <h3>What Changed</h3>
-        <p>
-          You gained strokes through better tee shot positioning, creating
-          shorter approach distances than your previous three rounds.
-        </p>
-      </div>
-
-      <div className="insight-card">
-        <h3>Next Round Objective</h3>
-        <p>
-          Convert more scoring chances inside 15 feet. You created enough
-          birdie opportunities to score lower.
-        </p>
-      </div>
+      {insights.map((insight, index) => (
+        <div className="insight-card" key={index}>
+          <h3>{insight.title}</h3>
+          <p>{insight.text}</p>
+        </div>
+      ))}
     </div>
   );
 }

@@ -1,16 +1,16 @@
 
-# Loop Step 1
+# Loop Step 2
 
-Rebuilt round capture flow for the Loop golf app.
+Intelligence layer rebuild for Loop.
 
 Included:
+- Structured round state model
+- Hole-level tracking
+- Insight engine v1
+- Evidence-based observations
+- Scalable feature architecture
 - Modular React structure
-- Course setup screen
-- Improved round capture flow
-- Hole progression
-- Round completion storytelling
-- Reusable UI components
-- Vercel-ready structure
+- Vercel-ready setup
 
 ## Run
 
