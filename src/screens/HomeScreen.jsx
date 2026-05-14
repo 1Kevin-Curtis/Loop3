@@ -1,17 +1,16 @@
 
-export default function HomeScreen({ onStartRound }) {
+export default function HomeScreen({ onStart }) {
   return (
     <div className="screen">
       <div className="hero-card">
-        <p className="eyebrow">Current Focus</p>
-        <h1>Approach Play</h1>
+        <p className="eyebrow">Momentum</p>
+        <h1>Your scoring floor is improving</h1>
         <p>
-          Your scoring opportunities are improving, but missed greens from
-          120–160 yards are limiting lower scores.
+          Recent rounds show fewer blow-up holes and more stable scoring patterns.
         </p>
       </div>
 
-      <button className="primary-button" onClick={onStartRound}>
+      <button className="primary-button" onClick={onStart}>
         Start New Round
       </button>
     </div>
